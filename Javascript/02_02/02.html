@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="function Onclick(){console.log(tomb)}">console log</button>
+    <script>
+        let tomb = [];
+        function Adat(){
+        let sor = [];
+        for (let i = 0; i < (8 * 2) + 1; i++) {
+            sor.push('-');
+            console.log('1')
+        }
+        let tomb2 = [];
+        for (let j = 0; j < (8 * 2); j++) {
+            tomb2.push('|');
+            tomb2.push(' ');
+            console.log('2')
+        }
+        tomb2.push('|')
+        for (let i = 0; i < 8; i++) {
+            tomb.push(sor);
+            tomb.push(tomb2);
+            console.log('3')
+        }
+        console.log('4')
+        console.log(tomb)
+        }
+        Adat();
+    </script>
+</body>
+
+</html>
